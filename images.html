@@ -28,26 +28,22 @@
 		<li> <img src="images/photo4.jpg" alt="Ocean Sunset" width="225" height="168">Ocean Sunset </li>
 		<li> <img src="images/photo5.jpg" alt="Waterfall on the Beach" width="225" height="168">Waterfall on the Beach </li>
 		<li> <img src="images/photo6.jpg" alt="Fog Moving In" width="225" height="168">Fog Moving In </li>
+      </ul>
    </main> 
    <script>
 			//Step 1: Select all of the images on the page
 
-			
-			
-			
+			var imgEl = document.getElementsByTagName("img");	
 			
 
 			//Step 2: Change the second and fourth pictures on the page to the "lighthouseisland.jpg" picture in the 
 			//images folder
+			
+			if (imgEl.length > 0) {
+                imgEl[1].src = "images/lighthouseisland.jpg";
+                imgEl[3].src = "images/lighthouseisland.jpg";
+            }
 
-			
-			
-			
-			
-			
-			
-			
-   
    
    </script>
    <footer>Copyright &copy; 2015
